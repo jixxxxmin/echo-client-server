@@ -81,7 +81,7 @@ void recvThread(int sd) {
 		printf("%s", buf);
 		fflush(stdout);
         if (param.broadcast) {
-            for (int i = 4; i < 256;) {
+            for (int i = 4; i < 10;) {
                 res = ::send(i, buf, res, 0);
                 i++;
             }
